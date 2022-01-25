@@ -1,0 +1,124 @@
+/*topBar style*/
+.top_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 70px 0 241px;
+  background-color: #21248D;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top_bar .logo_icon {
+  width: 127px;
+  height: 43px;
+  background: url("../../image/dark/common/topBar/img/img_logo.png") no-repeat;
+  position: absolute;
+  top: 12.6px;
+  left: 39px;
+}
+
+.top_bar ul.top_menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 42px;
+  cursor: pointer;
+}
+
+.top_bar ul.top_menu_list > li {
+  font-family: "PretendardB";
+  font-size: 18px;
+  color: #F6F6F6;
+  margin-right: 60px;
+}
+
+.top_bar .top_func_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_bar .top_func_area .user_name {
+  justify-self: flex-end;
+  width: 114px;
+  font-family: "PretendardB";
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+  padding-left: 30px;
+  line-height: 3;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.top_bar .top_func_area .user_name::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("../../image/dark/page/productList/img/img_profile.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.top_bar .top_func_area .user_name span {
+  font-family: "PretendardM";
+  font-size: 15px;
+  letter-spacing: -0.24px;
+  color: #B9B9B9;
+  margin-left: 3px;
+}
+
+.top_bar .top_func_area .btn_search {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-image: url("../../image/dark/common/topBar/icon/icon_search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.top_bar .top_func_area .btn_search:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top_bar .top_func_area .btn_basket {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-image: url("../../image/dark/common/topBar/icon/icon_basket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.top_bar .top_func_area .btn_basket:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

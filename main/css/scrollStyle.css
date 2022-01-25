@@ -1,0 +1,65 @@
+/*scroll style*/
+.search_list_area .mCSB_scrollTools .mCSB_draggerContainer {
+  top: -10px;
+  right: 48%;
+}
+.search_list_area .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #5d717a;;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+}
+.search_list_area .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: rgba(228, 239, 245,0.1);
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+}
+.cctv_list_body .mCSB_scrollTools .mCSB_draggerContainer {
+  top: -10px;
+  right: 0;
+}
+.cctv_list_body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #546879;
+  border-radius: 5px;
+  width: 3px;
+  height: 100%;
+}
+.cctv_list_body .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #273A4A;
+  border-radius: 5px;
+  width: 3px;
+  height: 100%;
+}
+.gis_cluster_popup .gis_cluster_list .mCSB_scrollTools .mCSB_draggerContainer {
+  top: -10px;
+  right: 15px;
+}
+.gis_cluster_popup .gis_cluster_list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #738f9c;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+}
+.gis_cluster_popup .gis_cluster_list .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  border-radius: 5px;
+  width: 4px;
+  height: 100%;
+}
+.evt_history_area .evt_history_body .mCSB_scrollTools .mCSB_draggerContainer {
+  top: -12px;
+  right: 2px;
+}
+.evt_history_area .evt_history_body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #74868f;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+}
+.evt_history_area .evt_history_body .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+}

@@ -1,0 +1,117 @@
+/*data relation 달력 스타일*/
+.ui-widget.ui-widget-content {
+    width: 254px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #048736;
+    background-color: #0c0e0f;
+    left: 363px;
+}
+#ui-datepicker-div {
+  position: absolute;
+  top: 286.5px;
+  left: 373.5px;
+}
+.ui-datepicker .ui-datepicker-header {
+  border-radius: 5px;
+  border: solid 1px #048736;
+  background-color: #048736;
+}
+.ui-datepicker .ui-datepicker-title {
+  font-family: "NotoSansCJKB";
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: center;
+  color: #ffffff;
+}
+.ui-datepicker th {
+  font-family: "NotoSansCJKM";
+  font-size: 13px;
+  letter-spacing: -0.33px;
+  color: #048736;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  border: solid 1px #0c0e0f;
+  background-color: #0c0e0f;
+  font-family: "NotoSansCJKM";
+  font-size: 13px;
+  color: #ffffff;
+  width: 32px;
+  height: 25px;
+  line-height: 1.8;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-content .ui-state-highlight:hover {
+  border: solid 1px #063618;
+  background-color: #063618;
+  font-family: "NotoSansCJKM";
+  font-size: 13px;
+  color: #06ba4b;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-content .ui-state-active:hover {
+  border: solid 1px #30bf48;
+  background-color: #048736;
+  font-family: "NotoSansCJKM";
+  font-size: 13px;
+  color: #ffffff;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover {
+  border: solid 1px #048736;
+  background-color: #063618;
+  font-family: "NotoSansCJKM";
+  font-size: 13px;
+  color: #ffffff;
+}
+.ui-datepicker .ui-datepicker-prev {
+  width: 24px;
+  height: 24px;
+  background: url("../../image/dark/page/evtHistory/btn/btn_calendar_prev_normal.png")
+    no-repeat;
+  display: block;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-next {
+  width: 24px;
+  height: 24px;
+  background: url("../../image/dark/page/evtHistory/btn/btn_calendar_next_normal.png")
+  no-repeat;
+  display: block;
+  position: absolute;
+  top: 3.5px;
+  right: 3.5px;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+  width: 24px;
+  height: 24px;
+  background: url("../../image/dark/page/evtHistory/btn/btn_calendar_prev_hover.png")
+    no-repeat;
+  display: block;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  cursor: pointer;
+  border: none !important;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+  width: 24px;
+  height: 24px;
+  background: url("../../image/dark/page/evtHistory/btn/btn_calendar_next_hover.png")
+  no-repeat;
+  display: block;
+  position: absolute;
+  top: 3.5px;
+  right: 3.5px;
+  cursor: pointer;
+  border: none !important;
+}
+
