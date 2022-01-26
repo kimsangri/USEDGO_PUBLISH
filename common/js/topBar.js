@@ -1,15 +1,22 @@
 //topBar script
 $(document).ready(function () {
-    //menu별 화면 show
-    $(".btn_menu").on('click', function () {
-        var menu = $(this).data("menu");
-        $(".dash_info").hide();
-        $("#" + menu).show();
+    $(".top_menu_area").mouseover(function () {
+        $(".top_sub_menu_area").stop().fadeIn(150);
+    });
 
-        $(this).removeClass("active");
-        $(this).siblings().each(function () {
-            $(this).removeClass("active");
+    $(".top_menu_area").mouseout(function () {
+        $(".top_sub_menu_area").stop().fadeOut(150);
+    });
+
+    $(".top_search_area .btn_close").on("click", function () {
+        $(".top_search_area").css({
+            top: '-269px'
         });
-        $(this).addClass("active");
+    });
+
+    $(".top_func_area .btn_search").on("click", function () {
+        $(".top_search_area").css({
+            top: '0'
+        });
     });
 });

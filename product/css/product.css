@@ -1,0 +1,56 @@
+/*product style*/
+.dash_container {
+  padding-top: 160px;
+}
+
+.dash_container .product_list_wrap {
+  width: 1022px;
+  height: auto;
+  padding-top: 76px;
+  position: relative;
+}
+
+.dash_container .product_list_wrap .product_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.dash_container .product_list_wrap .product_list .product_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 308px;
+  height: auto;
+}
+
+.dash_container .product_list_wrap .product_list .product_box .product_img {
+  width: 308px;
+  height: 373px;
+  border-radius: 25px;
+  background-color: rgba(196, 196, 196, 0.5);
+  position: relative;
+}
+
+.dash_container .product_list_wrap .product_list .product_box .product_img .btn_like {
+  width: 39px;
+  height: 36px;
+  background: url("../../image/dark/page/product/btn/btn_like_normal.png") no-repeat;
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.dash_container .product_list_wrap .product_list .product_box .product_img .btn_like .active {
+  background: url("../../image/dark/page/product/btn/btn_like_active.png") no-repeat;
+}

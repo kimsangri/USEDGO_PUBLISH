@@ -19,11 +19,14 @@ body {
 }
 
 .dash_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: auto;
-  padding: 90px 320px 593px 320px;
+  padding: 160px 320px 150px 320px;
   background-color: #0F0655;
-  position: absolute;
-  top: 70px;
-  left: 0;
 }

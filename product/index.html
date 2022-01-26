@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="../common/css/common.css" />
   <link rel="stylesheet" href="../common/css/topBar.css" />
   <link rel="stylesheet" href="../common/css/footer.css" />
+  <link rel="stylesheet" href="../common/css/navMenu.css" />
   <link rel="stylesheet" href="../main/css/main.css" />
+  <link rel="stylesheet" href="../product/css/product.css" />
   <link rel="stylesheet" href="../common/css/editStyle.css" />
 </head>
 
@@ -108,39 +110,38 @@
     </section>
     <!--dashContainer-->
     <section class="dash_container">
-      <!--mainDashArea-->
-      <div class="main_dash_area">
-        <div class="main_dash_text">고객님의<br>물품이름을 입력하고<br>시세를 알아보세요.</div>
-        <div class="search_input_area">
-          <input type="text" class="search_input" placeholder="예) 아령">
-          <button type="button" class="btn_search"></button>
-        </div>
-      </div>
+      <ul class="nav_menu_list">
+        <li>운동용품</li>
+        <li>아령</li>
+        <li>바벨</li>
+        <li>원판/플레이트</li>
+        <li>벨트</li>
+        <li>악력기</li>
+        <li>밴드/짐볼</li>
+        <li>스트랩/보호대</li>
+      </ul>
 
       <!--mainProductlistWrap-->
-      <div class="main_product_list_wrap">
-        <div class="main_product_list">
-          <div class="main_list_title">New upload</div>
-          <div class="main_list_sub_title">최신 등록된 상품</div>
-          <div class="product_frame">
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
+      <div class="product_list_wrap">
+        <div class="product_list">
+          <div class="product_box">
+            <div class="product_img">
+              <button type="button" class="btn_like"></button>
+            </div>
+            <div class="product_name">아령</div>
+            <div class="product_price">10,000원</div>
+            <div class="product_count_value">관심13&nbsp;채팅10</div>
           </div>
-          <button type="button" class="btn_more">더보기</button>
-        </div>
-        <div class="main_product_list">
-          <div class="main_list_title">Community</div>
-          <div class="main_list_sub_title">커뮤니티</div>
-          <div class="product_frame">
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
+          <div class="product_box">
+            <div class="product_img">
+              <button type="button" class="btn_like"></button>
+            </div>
+            <div class="product_name">아령</div>
+            <div class="product_price">10,000원</div>
+            <div class="product_count_value">관심13&nbsp;채팅10</div>
           </div>
-          <button type="button" class="btn_more">더보기</button>
         </div>
+        <button type="button" class="btn_more">더보기</button>
       </div>
     </section>
 
@@ -181,6 +182,6 @@
 <script src="../component/highchart/highcharts.js"></script>
 <script src="../common/js/common.js"></script>
 <script src="../common/js/topBar.js"></script>
-
+<script src="../product/js/product.js"></script>
 
 </html>
