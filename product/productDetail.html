@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="../common/css/common.css" />
   <link rel="stylesheet" href="../common/css/topBar.css" />
   <link rel="stylesheet" href="../common/css/footer.css" />
+  <link rel="stylesheet" href="../common/css/navMenu.css" />
   <link rel="stylesheet" href="../main/css/main.css" />
+  <link rel="stylesheet" href="../product/css/product.css" />
   <link rel="stylesheet" href="../common/css/editStyle.css" />
 </head>
 
@@ -109,38 +111,62 @@
 
     <!--dashContainer-->
     <section class="dash_container">
-      <!--mainDashArea-->
-      <div class="main_dash_area">
-        <div class="main_dash_text">고객님의<br>물품이름을 입력하고<br>시세를 알아보세요.</div>
-        <div class="search_input_area">
-          <input type="text" class="search_input" placeholder="예) 아령">
-          <button type="button" class="btn_search"></button>
+      <div class="picture_area">
+        <div class="picture_box"></div>
+        <div class="picture_list">
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
         </div>
       </div>
 
-      <!--mainProductlistWrap-->
-      <div class="main_product_list_wrap">
-        <div class="main_product_list">
-          <div class="main_list_title">New upload</div>
-          <div class="main_list_sub_title">최신 등록된 상품</div>
-          <div class="product_frame">
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
+      <!--productInfoWrap-->
+      <div class="product_info_wrap">
+        <div class="user_name">안김안</div>
+        <div class="product_name">상품명</div>
+        <div class="product_price">100,000원</div>
+
+        <div class="product_info_frame">
+          <div class="product_info_title">시세</div>
+          <ul class="chart_period_list">
+            <li>1개월</li>
+            <li>3개월</li>
+            <li>6개월</li>
+            <li>1년</li>
+            <li>전체</li>
+          </ul>
+          <div class="chart_area">
+            <div class="chart_in" id="recentPriceLine"></div>
           </div>
-          <button type="button" class="btn_more">더보기</button>
+          <ul class="total_price_list">
+            <li>240,000</li>
+            <li>120,000</li>
+            <li>100,000</li>
+            <li>80,000</li>
+            <li>70,000</li>
+            <li>50,000</li>
+            <li>0</li>
+          </ul>
         </div>
-        <div class="main_product_list">
-          <div class="main_list_title">Community</div>
-          <div class="main_list_sub_title">커뮤니티</div>
-          <div class="product_frame">
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
-            <div class="product_box"></div>
+        <div class="product_info_frame">
+          <div class="product_info_title">기타 설명</div>
+          <div class="product_info_box">궁금하신점 댓글 달아주세요~!</div>
+          <div class="product_btn_group">
+            <button type="button" class="btn_product_like">관심상품 67</button>
           </div>
-          <button type="button" class="btn_more">더보기</button>
+        </div>
+        <div class="product_info_frame">
+          <div class="product_info_title">댓글</div>
+          <input type="text" class="comment_input" placeholder="댓글쓰기...">
         </div>
       </div>
     </section>
@@ -183,6 +209,5 @@
 <script src="../component/highchart/highcharts.js"></script>
 <script src="../common/js/common.js"></script>
 <script src="../common/js/topBar.js"></script>
-
 
 </html>

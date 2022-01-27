@@ -119,9 +119,9 @@
             transition: transform .3s ease-in-out; 
 
             &:hover{
-                transform:rotate(180deg);
-                -ms-transform:rotate(180deg);
-                -webkit-transform:rotate(180deg);
+                transform:rotate(90deg);
+                -ms-transform:rotate(90deg);
+                -webkit-transform:rotate(90deg);
             }
         }
         

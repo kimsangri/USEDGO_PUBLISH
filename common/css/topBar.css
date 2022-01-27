@@ -146,9 +146,9 @@
 }
 
 .top_bar .top_search_area .btn_close:hover {
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 .top_bar .top_search_area .top_search_input_area {

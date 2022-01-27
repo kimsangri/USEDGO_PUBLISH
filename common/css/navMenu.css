@@ -35,10 +35,12 @@ ul.nav_menu_list > li:first-child:hover {
   transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
+  color: #FFFFFF;
 }
 
 ul.nav_menu_list > li:hover {
   transform: translate(3px, 0);
   -ms-transform: translate(3px, 0);
   -webkit-transform: translate(3px, 0);
+  color: #FFE782;
 }

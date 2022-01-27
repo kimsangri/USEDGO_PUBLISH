@@ -117,24 +117,6 @@
                     }
                 }
             }
-
-            .btn_more{
-                width: 124px;
-                height: 52px;
-                font-family: "PretendardM";
-                font-size: 22px;
-                color: #000000;
-                background-color: #FFE36D;
-                margin: 0 auto;
-                border-radius: 10px;
-                transition: transform .3s ease-in-out;  
-
-                &:hover{
-                    transform: scale(1.2, 1.2);;
-                    -ms-transform: scale(1.2, 1.2);
-                    -webkit-transform: scale(1.2, 1.2);
-                }
-            }
         }
     }
 }
