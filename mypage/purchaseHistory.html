@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="../common/css/topBar.css" />
   <link rel="stylesheet" href="../common/css/footer.css" />
   <link rel="stylesheet" href="../common/css/navMenu.css" />
+  <link rel="stylesheet" href="../common/css/selectBox.css" />
   <link rel="stylesheet" href="../main/css/main.css" />
-  <link rel="stylesheet" href="../product/css/product.css" />
+  <link rel="stylesheet" href="../mypage/css/mypage.css" />
+  <link rel="stylesheet" href="../mypage/css/purchaseHistory.css" />
   <link rel="stylesheet" href="../common/css/editStyle.css" />
 </head>
 
@@ -111,80 +113,45 @@
 
     <!--dashContainer-->
     <section class="dash_container">
-      <div class="picture_area">
-        <div class="picture_box"></div>
-      </div>
+      <ul class="nav_menu_list">
+        <li>MY PAGE</li>
+        <li>내 정보</li>
+        <li>프로필 정보</li>
+        <li>판매 정산 계좌</li>
+        <li>나의 중고시세</li>
+        <li>쇼핑정보</li>
+        <li>구매 내역</li>
+        <li>판매 내역</li>
+        <li>관심 상품</li>
+      </ul>
 
-      <!--productInfoWrap-->
-      <div class="product_info_wrap">
-        <div class="user_name">안김안</div>
-        <div class="product_name">상품명</div>
-        <div class="product_price">100,000원</div>
-
-        <div class="product_info_frame">
-          <div class="product_info_title">시세</div>
-          <ul class="chart_period_list">
-            <li>1개월</li>
-            <li>3개월</li>
-            <li>6개월</li>
-            <li>1년</li>
-            <li>전체</li>
-          </ul>
-          <div class="chart_area">
-            <div class="chart_in" id="recentPriceLine"></div>
-          </div>
-          <ul class="total_price_list">
-            <li>240,000</li>
-            <li>120,000</li>
-            <li>100,000</li>
-            <li>80,000</li>
-            <li>70,000</li>
-            <li>50,000</li>
-            <li>0</li>
-          </ul>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">사이즈</div>
-          <div class="product_info_text">S</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">색상</div>
-          <div class="color_select_area">
-            <div class="color_block color_sky_blue active"></div>
-          </div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">사용감</div>
-          <div class="product_info_text">상</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">사용기간</div>
-          <div class="product_info_text">20.12.31~22.12.31</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">보증기간</div>
-          <div class="product_info_text">~22.12.31</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">기타 설명</div>
-          <div class="product_info_box">궁금하신점 댓글 달아주세요~!</div>
-          <div class="product_btn_group">
-            <button type="button" class="btn_product_like">관심상품 67</button>
-          </div>
-        </div>
-        <div class="product_info_frame comment_frame">
-          <div class="product_info_title">댓글</div>
-          <input type="text" class="comment_input" placeholder="댓글쓰기...">
-          <button type="button" class="btn_comment_create">등록</button>
-          <div class="comment_area">
-            <div class="comment_block">
-              <div class="comment_text">정확한 사용상태가 어떤가요?</div>
-              <div class="comment_user">헬린이</div>
+      <!--mypageWrap-->
+      <div class="mypage_wrap">
+        <div class="mypage_info_frame">
+          <div class="mypage_info_title">구매 내역</div>
+          <div class="history_frame">
+            <div class="history_box">
+              <div class="history_title">구매 입찰</div>
+              <div class="history_value tRed">0</div>
             </div>
-            <div class="comment_block">
-              <div class="comment_text">사이즈를 수치로 알 수 있을까요?</div>
-              <div class="comment_user">헬린이</div>
+            <div class="history_box">
+              <div class="history_title">진행 중</div>
+              <div class="history_value">0</div>
             </div>
+            <div class="history_box">
+              <div class="history_title">종료</div>
+              <div class="history_value">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="mypage_info_frame">
+          <select class="select_history" id="selectPurchaseHistory">
+            <option value="1">전체</option>
+            <option value="1">입찰중</option>
+            <option value="1">기한만료</option>
+          </select>
+          <div class="purchase_history_frame">
+            <div class="history_hint">구매 입찰 내역이 없습니다.</div>
           </div>
         </div>
       </div>
@@ -228,6 +195,6 @@
 <script src="../component/highchart/highcharts.js"></script>
 <script src="../common/js/common.js"></script>
 <script src="../common/js/topBar.js"></script>
-<script src="../product/js/recentPriceLineChart.js"></script>
+<script src="../mypage/js/purchaseHistory.js"></script>
 
 </html>

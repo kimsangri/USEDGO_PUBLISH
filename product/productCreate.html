@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="../common/css/topBar.css" />
   <link rel="stylesheet" href="../common/css/footer.css" />
   <link rel="stylesheet" href="../common/css/navMenu.css" />
+  <link rel="stylesheet" href="../common/css/selectBox.css" />
   <link rel="stylesheet" href="../main/css/main.css" />
   <link rel="stylesheet" href="../product/css/product.css" />
+  <link rel="stylesheet" href="../product/css/productCreate.css" />
   <link rel="stylesheet" href="../common/css/editStyle.css" />
 </head>
 
@@ -113,78 +115,91 @@
     <section class="dash_container">
       <div class="picture_area">
         <div class="picture_box"></div>
+        <div class="picture_list">
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+          <div class="picture_small_box">
+            <button type="button" class="btn_delete"></button>
+          </div>
+        </div>
       </div>
 
       <!--productInfoWrap-->
       <div class="product_info_wrap">
         <div class="user_name">안김안</div>
-        <div class="product_name">상품명</div>
-        <div class="product_price">100,000원</div>
-
         <div class="product_info_frame">
-          <div class="product_info_title">시세</div>
-          <ul class="chart_period_list">
-            <li>1개월</li>
-            <li>3개월</li>
-            <li>6개월</li>
-            <li>1년</li>
-            <li>전체</li>
-          </ul>
-          <div class="chart_area">
-            <div class="chart_in" id="recentPriceLine"></div>
-          </div>
-          <ul class="total_price_list">
-            <li>240,000</li>
-            <li>120,000</li>
-            <li>100,000</li>
-            <li>80,000</li>
-            <li>70,000</li>
-            <li>50,000</li>
-            <li>0</li>
-          </ul>
+          <input type="text" class="product_create_input" placeholder="상품명을 입력해 주세요.(최대 30자)">
+        </div>
+        <div class="product_info_frame">
+          <div class="product_info_title">카테고리 선택</div>
+          <select class="select_category" id="selectCategory01">
+            <option value="1" disabled selected>대분류</option>
+            <option value="1">운동용품</option>
+            <option value="1">의류</option>
+          </select>
+          <select class="select_category" id="selectCategory02">
+            <option value="1" disabled selected>소분류</option>
+            <option value="1">재킷 & 베스트</option>
+            <option value="1">탑 & 티셔츠</option>
+            <option value="1">팬츠 & 타이츠</option>
+            <option value="1">양말</option>
+            <option value="1">셋업</option>
+          </select>
+        </div>
+        <div class="product_info_frame price_insert_frame">
+          <input type="text" class="product_create_input" placeholder="판매가격을 입력해 주세요.">
         </div>
         <div class="product_info_frame">
           <div class="product_info_title">사이즈</div>
-          <div class="product_info_text">S</div>
+          <select class="select_category" id="selectSize">
+            <option value="1">S</option>
+            <option value="1">M</option>
+            <option value="1">L</option>
+          </select>
         </div>
         <div class="product_info_frame">
           <div class="product_info_title">색상</div>
           <div class="color_select_area">
-            <div class="color_block color_sky_blue active"></div>
+            <div class="color_block color_white"></div>
+            <div class="color_block color_gray"></div>
+            <div class="color_block color_dark_gray"></div>
+            <div class="color_block color_black"></div>
+            <div class="color_block color_red"></div>
+            <div class="color_block color_pink"></div>
+            <div class="color_block color_orange"></div>
+            <div class="color_block color_yellow"></div>
+            <div class="color_block color_mint"></div>
+            <div class="color_block color_green"></div>
+            <div class="color_block color_dark_green"></div>
+            <div class="color_block color_sky_blue"></div>
+            <div class="color_block color_blue"></div>
+            <div class="color_block color_violet"></div>
           </div>
         </div>
         <div class="product_info_frame">
           <div class="product_info_title">사용감</div>
-          <div class="product_info_text">상</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">사용기간</div>
-          <div class="product_info_text">20.12.31~22.12.31</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">보증기간</div>
-          <div class="product_info_text">~22.12.31</div>
-        </div>
-        <div class="product_info_frame">
-          <div class="product_info_title">기타 설명</div>
-          <div class="product_info_box">궁금하신점 댓글 달아주세요~!</div>
           <div class="product_btn_group">
-            <button type="button" class="btn_product_like">관심상품 67</button>
+            <button type="button" class="btn_grade">상</button>
+            <button type="button" class="btn_grade">중</button>
+            <button type="button" class="btn_grade">하</button>
           </div>
         </div>
-        <div class="product_info_frame comment_frame">
-          <div class="product_info_title">댓글</div>
-          <input type="text" class="comment_input" placeholder="댓글쓰기...">
-          <button type="button" class="btn_comment_create">등록</button>
-          <div class="comment_area">
-            <div class="comment_block">
-              <div class="comment_text">정확한 사용상태가 어떤가요?</div>
-              <div class="comment_user">헬린이</div>
-            </div>
-            <div class="comment_block">
-              <div class="comment_text">사이즈를 수치로 알 수 있을까요?</div>
-              <div class="comment_user">헬린이</div>
-            </div>
+        <div class="product_info_frame">
+          <input type="text" class="product_create_input" placeholder="사용기간을 입력해 주세요.">
+          <input type="text" class="product_create_input" placeholder="보증기간을 입력해 주세요.">
+        </div>
+        <div class="product_info_frame">
+          <textarea class="product_create_text" placeholder="기타 추가 정보를 입력해 주세요. (최대 1,000자)"></textarea>
+          <div class="product_btn_group">
+            <button type="button" class="btn_save">임시저장</button>
+            <button type="button" class="btn_save">등록완료</button>
           </div>
         </div>
       </div>
@@ -229,5 +244,6 @@
 <script src="../common/js/common.js"></script>
 <script src="../common/js/topBar.js"></script>
 <script src="../product/js/recentPriceLineChart.js"></script>
+<script src="../product/js/productCreate.js"></script>
 
 </html>
